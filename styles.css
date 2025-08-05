@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Hero / Header */
+.hero {
+    background: linear-gradient(to bottom right, #f0c3ff, #a3e0ff);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #6c63ff;
+}
+
+/* Secciones */
+.seccion {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.seccion h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6c63ff;
+}
+
+/* Tabla de precios */
+.tabla-precios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.precio {
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.precio h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+/* Reglas */
+ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+/* Contacto */
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.redes a:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
+
+/* Page Transitions*/
+#contenido {
+    
+    transition: opacity 0.3s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
