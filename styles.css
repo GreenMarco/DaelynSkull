@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Splat';
+    src: url('assets/fonts/Splat.OTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset básico */
 * {
     margin: 0;
@@ -6,23 +13,25 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-image: url('assets/img/TetoPear.png');
-    background-size: cover;
-    background-position: 0% 70%;
-    background-repeat: no-repeat;
+    font-family: 'Splat', sans-serif;
+    background: linear-gradient(to bottom right, #441f3f, #1a1a1a);
     color: #222;
-    line-height: 1.6;
+    background-color: #1a1a1a;
+    background-image: 
+        radial-gradient(#fec2ca 3px, transparent 1px),
+        radial-gradient(#fec2ca 3px, transparent 1px);
+    background-size: 70px 70px; /* distancia entre puntos */
+    background-position: 0 0, 35px 35px;
 }
 
 /* Hero / Header */
 .hero {
-    background-image: url('assets/img/TetoPear.png');
+    /*background-image: url('assets/img/TetoPear.png');
     background-size: cover;
     background-position: 0% 70%;
-    background-repeat: no-repeat;
-    /*background: linear-gradient(to bottom right, #f0c3ff, #a3e0ff);*/
-    padding: 4rem 2rem;
+    background-repeat: no-repeat;*/
+    background: linear-gradient(to bottom right, #fdb6c0, #fec2ca);
+    padding: 1rem 9rem;
     text-align: center;
 }
 
@@ -38,7 +47,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(to bottom right, #f0c3ff, #a3e0ff);
+    background: linear-gradient(to bottom right, #fec2ca, #fec2ca);
     padding: 1rem;
     text-align: center;
     border-bottom: 1px solid #ddd;
@@ -61,16 +70,17 @@ body {
 
 /* Secciones */
 .seccion {
+    background-color: #f9f9f9;
     text-align: center;
     padding: 1rem;
-    max-width: 1000px;
+    max-width: 700px;
     margin: auto;
 }
 
 .seccion h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #6c63ff;
+    color: #2e2550;
 }
 
 /*Foto de perfil*/
@@ -145,19 +155,19 @@ ul {
 
 .redes a {
     text-decoration: none;
-    color: #6c63ff;
+    color: #222222;
     font-weight: bold;
     transition: opacity 0.2s;
 }
 
 .redes a:hover {
-    color: #da11da;
+    color: #fec2ca;
     transform: scale(1.2);
 }
 
 /* Footer */
 footer {
-    background-color: #2e2550;
+    background-color: #fec2ca;
     color: #adacac;
     text-align: center;
     padding: 1.5rem;
