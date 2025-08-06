@@ -7,14 +7,21 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fdfdfd;
+    background-image: url('assets/img/TetoPear.png');
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
     color: #222;
     line-height: 1.6;
 }
 
 /* Hero / Header */
 .hero {
-    background: linear-gradient(to bottom right, #f0c3ff, #a3e0ff);
+    background-image: url('assets/img/TetoPear.png');
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+    /*background: linear-gradient(to bottom right, #f0c3ff, #a3e0ff);*/
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -31,7 +38,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #ffffff;
+    background: linear-gradient(to bottom right, #f0c3ff, #a3e0ff);
     padding: 1rem;
     text-align: center;
     border-bottom: 1px solid #ddd;
@@ -54,6 +61,7 @@ body {
 
 /* Secciones */
 .seccion {
+    text-align: center;
     padding: 1rem;
     max-width: 1000px;
     margin: auto;
@@ -63,6 +71,15 @@ body {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #6c63ff;
+}
+
+/*Foto de perfil*/
+.pfp {
+    display: block;
+    margin: 0 auto 1rem auto;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 /* Tabla de precios */
@@ -119,6 +136,7 @@ ul {
 
 /* Contacto */
 .redes {
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -133,28 +151,17 @@ ul {
 }
 
 .redes a:hover {
-    opacity: 0.8;
+    color: #da11da;
+    transform: scale(1.2);
 }
 
 /* Footer */
 footer {
-    background-color: #eee;
+    background-color: #2e2550;
+    color: #adacac;
     text-align: center;
     padding: 1.5rem;
     font-size: 0.9rem;
     margin-top: 4rem;
 }
 
-/* Page Transitions*/
-#contenido {
-    
-    transition: opacity 0.3s ease;
-}
-
-.fade-out {
-    opacity: 0;
-}
-
-.fade-in {
-    opacity: 1;
-}
