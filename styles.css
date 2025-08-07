@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Splat';
-    src: url('assets/fonts/Splat.OTF') format('truetype');
+    src: url('assets/fonts/Mario\ Font.OTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Splat', sans-serif;
+    font-family: 'Georgia', sans-serif;
     background: linear-gradient(to bottom right, #441f3f, #1a1a1a);
     color: #222;
     background-color: #1a1a1a;
@@ -72,8 +72,8 @@ body {
 .seccion {
     background-color: #f9f9f9;
     text-align: center;
-    padding: 1rem;
-    max-width: 700px;
+    padding: 2rem;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -81,6 +81,45 @@ body {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #2e2550;
+}
+
+.seccion h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2e2550;
+}
+
+.inde p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2e2550;
+}
+
+.seccionL{
+    text-align: left;
+    background-color: #f9f9f9;
+
+    padding: 1rem 3rem;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.3rem;
+    color: #2e2550;
+
+    
+}
+.seccionL p{
+    font-size: 1.3rem;
+    color: #2e2550;
+    padding: 8px 0px 0px 0px;
+}
+
+.seccionL li {
+    margin-bottom: 1rem;
+}
+
+.note {
+    font-size: 0.7rem;
+    color:#222;
 }
 
 /*Foto de perfil*/
@@ -93,12 +132,32 @@ body {
 }
 
 /* Tabla de precios */
-.tabla-precios {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
+.tabla-precios table {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.rowsH{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.rowsH th,
+.rowsH td {
+    padding: 18px;
+    text-align: center;
+}
+
+/* Línea gruesa entre thead y tbody */
+.rowsH thead tr {
+    border-bottom: 3px solid black;
+}
+
+/* Líneas finas entre filas del tbody */
+.rowsHa tbody tr {
+    border-bottom: 1px solid #ccc;
 }
 
 .precio {
@@ -136,6 +195,27 @@ body {
 .galeria img:hover {
     transform: scale(1.03);
 }
+/* Galería mini */
+.galeria-mini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.galeria-mini img {
+    width: 100px;       /* Tamaño pequeño fijo */
+    height: auto;       /* Mantener proporción */
+    object-fit: cover;  /* Asegura que se recorte bien si fuera necesario */
+    border-radius: 8px; /* Bordes suaves (opcional) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera (opcional) */
+    transition: transform 0.2s ease;
+    }
+
+.galeria-mini img:hover {
+    transform: scale(1.05); /* Pequeño efecto al pasar el cursor */
+}
 
 /* Reglas */
 ul {
@@ -168,10 +248,16 @@ ul {
 /* Footer */
 footer {
     background-color: #fec2ca;
-    color: #adacac;
+    color: #222222;
     text-align: center;
     padding: 1.5rem;
     font-size: 0.9rem;
     margin-top: 4rem;
+}
+.bluesky{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s;
 }
 
