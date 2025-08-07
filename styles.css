@@ -68,6 +68,16 @@ body {
     color: #6c63ff;
 }
 
+.fondo-derecha {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 80px; /* o el tamaño que quieras */
+    z-index: -1;
+    opacity: 0.1; /* opcional, para que no moleste */
+    pointer-events: none; /* para que no interfiera con clicks */
+}
+
 /* Secciones */
 .seccion {
     background-color: #f9f9f9;
