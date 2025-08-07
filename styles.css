@@ -179,7 +179,7 @@ body {
 /* Galería */
 .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -241,8 +241,18 @@ ul {
 }
 
 .redes a:hover {
-    color: #fec2ca;
+    color: #ff9cff;
     transform: scale(1.2);
+}
+
+.redes a img.bluesky {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+}
+
+.redes a:hover img.bluesky {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(16%) saturate(749%) hue-rotate(263deg) brightness(101%) contrast(101%);
 }
 
 /* Footer */
@@ -257,7 +267,6 @@ footer {
 .bluesky{
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    transition: transform 0.2s;
+    border-radius: 100%;
 }
 
