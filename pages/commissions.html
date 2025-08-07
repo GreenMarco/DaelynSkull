@@ -23,142 +23,151 @@
 
     <main class="seccion">
         <h2>Comisiones</h2>
-        <br><br><br>
+        <br>
         <section class="tabla-precios">
-            <h3>Normal</h3>
-            <table class="rowsH">
-                <div class="galeria-mini">
-                    <img src="../assets/img/Lapis.jpg" alt="Obra 1" />
-                    <img src="../assets/img/Teto.png" alt="Obra 2" />
-                    <img src="../assets/img/Marie.png" alt="Obra 3" />
-                    <img src="../assets/img/Lyn_Star.jpg" alt="DaelynSkull"/>
-                </div>
-                <thead>
-                <tr>
-                    <th>Tamaño</th>
-                    <th>Lineart</th>
-                    <th>Color base</th>
-                    <th>Full color</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Headshot</td>
-                    <td>$8</td>
-                    <td>$10</td>
-                    <td>$25</td>
-                </tr>
-                <tr>
-                    <td>Halfbody</td>
-                    <td>$12</td>
-                    <td>$15</td>
-                    <td>$35</td>
-                </tr>
-                <tr>
-                    <td>Fullbody</td>
-                    <td>$20</td>
-                    <td>$22</td>
-                    <td>$40</td>
-                </tr>
-                </tbody>
-            </table>
-            <p class="note">*Hay descuento si son varios para Match Icon</p>
 
-            <br><br><br>
+            <div class="tabs">
+                <button onclick="mostrarTabla('normal')">Normal</button>
+                <button onclick="mostrarTabla('chibi')">Chibi</button>
+                <button onclick="mostrarTabla('vtuber')">PNG Tubers</button>
+                <button onclick="mostrarTabla('emotes')">Emotes</button>
+            </div>
+            <br><br>
+            <div class="tabla-contenido" id="tabla-normal">
+                <h3>Normal</h3>
+                <table class="rowsH">
+                    <div class="galeria-mini">
+                        <img src="../assets/img/Lapis.jpg" alt="Obra 1" />
+                        <img src="../assets/img/Teto.png" alt="Obra 2" />
+                        <img src="../assets/img/Marie.png" alt="Obra 3" />
+                        <img src="../assets/img/Lyn_Star.jpg" alt="DaelynSkull"/>
+                    </div>
+                    <thead>
+                    <tr>
+                        <th>Tamaño</th>
+                        <th>Lineart</th>
+                        <th>Color base</th>
+                        <th>Full color</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Headshot</td>
+                        <td>$8</td>
+                        <td>$10</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Halfbody</td>
+                        <td>$12</td>
+                        <td>$15</td>
+                        <td>$35</td>
+                    </tr>
+                    <tr>
+                        <td>Fullbody</td>
+                        <td>$20</td>
+                        <td>$22</td>
+                        <td>$40</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="note">*Hay descuento si son varios para Match Icon</p>
+            </div>
 
-            <h3>Chibi</h3>
-            <table class="rowsH">
-                <div class="galeria-mini">
-                    <img src="../assets/img/MangoGirl.png" alt="Obra 1" />
+            <div class="tabla-contenido" id="tabla-chibi">
+                <h3>Chibi</h3>
+                <table class="rowsH">
+                    <div class="galeria-mini">
+                        <img src="../assets/img/MangoGirl.png" alt="Obra 1" />
+                        
+                    </div>
+                    <thead>
+                    <tr>
+                        <th>Tamaño</th>
+                        <th>Lineart</th>
+                        <th>Full color</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Headshot</td>
+                        <td>$12</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Halfbody</td>
+                        <td>$15</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>Fullbody</td>
+                        <td>$20</td>
+                        <td>$40</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                </div>
-                <thead>
-                <tr>
-                    <th>Tamaño</th>
-                    <th>Lineart</th>
-                    <th>Full color</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Headshot</td>
-                    <td>$12</td>
-                    <td>$25</td>
-                </tr>
-                <tr>
-                    <td>Halfbody</td>
-                    <td>$15</td>
-                    <td>$30</td>
-                </tr>
-                <tr>
-                    <td>Fullbody</td>
-                    <td>$20</td>
-                    <td>$40</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="tabla-contenido" id="tabla-vtuber">
+                <h3>PNG Tubers - 4 Frames</h3>
+                <table class="rowsH">
+                    <div class="galeria-mini">
+                        <img src="../assets/img/Marco0001MA.png" alt="Obra 1" />
+                        <img src="../assets/img/Marco0004MA.png" alt="Obra 2" />
+                        <img src="../assets/img/Vtuber1.png" alt="Obra 1" />
+                    </div>
+                    <thead>
+                    <tr>
+                        <th>Estilo</th>
+                        <th>Precio</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Chibi</td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>$65</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <br><br><br>
-
-            <h3>PNG Tubers - 4 Frames</h3>
-            <table class="rowsH">
-                <div class="galeria-mini">
-                    <img src="../assets/img/Marco0001MA.png" alt="Obra 1" />
-                    <img src="../assets/img/Marco0004MA.png" alt="Obra 2" />
-                    <img src="../assets/img/Vtuber1.png" alt="Obra 1" />
-                </div>
-                <thead>
-                <tr>
-                    <th>Estilo</th>
-                    <th>Precio</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Chibi</td>
-                    <td>$45</td>
-                </tr>
-                <tr>
-                    <td>Normal</td>
-                    <td>$65</td>
-                </tr>
-                </tbody>
-            </table>
-
-            <br><br><br>
-
-            <h3>Emotes</h3>
-            <table class="rowsH">
-                <div class="galeria-mini">
-                    <img src="../assets/img/Lapis.jpg" alt="Obra 1" />
-                    <img src="../assets/img/Teto.png" alt="Obra 2" />
-                    <img src="../assets/img/Marie.png" alt="Obra 3" />
-                    <img src="../assets/img/Lyn_Star.jpg" alt="DaelynSkull"/>
-                </div>
-                <thead>
-                <tr>
-                    <th>Cantidad</th>
-                    <th>Precio (USD)</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>5 Emotes</td>
-                    <td>$25</td>
-                </tr>
-                <tr>
-                    <td>10 Emotes</td>
-                    <td>$45</td>
-                </tr>
-                <tr>
-                    <td>15 Emotes</td>
-                    <td>$65</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="tabla-contenido" id="tabla-emotes">
+                <h3>Emotes</h3>
+                <table class="rowsH">
+                    <div class="galeria-mini">
+                        <img src="../assets/img/Lapis.jpg" alt="Obra 1" />
+                        <img src="../assets/img/Teto.png" alt="Obra 2" />
+                        <img src="../assets/img/Marie.png" alt="Obra 3" />
+                        <img src="../assets/img/Lyn_Star.jpg" alt="DaelynSkull"/>
+                    </div>
+                    <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Precio (USD)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>5 Emotes</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>10 Emotes</td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                        <td>15 Emotes</td>
+                        <td>$65</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <br><br><br>
         <section class="seccionL">
             <h2>Notas</h2>
             <br>
@@ -183,7 +192,7 @@
         <div class="redes">
             <a href="https://twitter.com/DaelynSkull" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://tumblr.com/daelynskull" target="_blank"><i class="fab fa-tumblr"></i></a>
-            <a href="https://bsky.app/profile/daelynskull.bsky.social" target="_blank"><img id="bluesky" src="../assets/img/BlueSky.png"></img></a>
+            <a href="https://bsky.app/profile/daelynskull.bsky.social" target="_blank"><img class="bluesky" src="../assets/img/BlueSky.png"></img></a>
             <a href="https://threads.com/@daelynskull" target="_blank"><i class="fa-brands fa-threads"></i></a>
             <a href="https://instagram.com/daelynskull" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
