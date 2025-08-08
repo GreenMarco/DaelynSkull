@@ -83,7 +83,7 @@ body {
 .seccion {
     background-color: #f9f9f9;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
     max-width: 800px;
     margin: auto;
 }
@@ -238,11 +238,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
+    
 }
 
 .galeria-mini img {
-    width: 100px;       /* Tamaño pequeño fijo */
+    width: 150px;       /* Tamaño pequeño fijo */
     height: auto;       /* Mantener proporción */
     border-radius: 3px; /* Bordes suaves (opcional) */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera (opcional) */
@@ -387,10 +387,10 @@ footer {
         flex-wrap: wrap;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         justify-content: center;
-        gap: 1rem;
+
     }
     .galeria-mini img {
-        width: 30%;       /* Tamaño pequeño fijo */
+        height: 40%;
     }
 
     .redes {
