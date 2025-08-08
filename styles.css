@@ -244,8 +244,7 @@ body {
 .galeria-mini img {
     width: 100px;       /* Tamaño pequeño fijo */
     height: auto;       /* Mantener proporción */
-    object-fit: cover;  /* Asegura que se recorte bien si fuera necesario */
-    border-radius: 8px; /* Bordes suaves (opcional) */
+    border-radius: 3px; /* Bordes suaves (opcional) */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera (opcional) */
     transition: transform 0.2s ease;
     }
@@ -341,8 +340,8 @@ footer {
         font-size: 14px;
         padding: 1rem;
     }
-    .seccion {
-        padding: 0.9rem;
+    .seccion p{
+        font-size: 1rem;
     }
     .seccionL{
         padding: 2rem 0.7rem;
@@ -378,13 +377,20 @@ footer {
 
     .galeria {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 1rem;
         margin-top: 0.2rem;
     }
+
+    .galeria-mini {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        justify-content: center;
+        gap: 1rem;
+    }
     .galeria-mini img {
-        width: 100px;
-        height: auto;
+        width: 30%;       /* Tamaño pequeño fijo */
     }
 
     .redes {
