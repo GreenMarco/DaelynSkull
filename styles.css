@@ -242,8 +242,7 @@ body {
 }
 
 .galeria-mini img {
-    width: 150px;       /* Tamaño pequeño fijo */
-    height: auto;       /* Mantener proporción */
+    height: 250px;       /* Mantener proporción */
     border-radius: 3px; /* Bordes suaves (opcional) */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera (opcional) */
     transition: transform 0.2s ease;
