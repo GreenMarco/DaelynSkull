@@ -38,6 +38,7 @@ body {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .hero p {
@@ -173,21 +174,33 @@ body {
 
 .tabs {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
 }
 
 .tabs button {
-    background-color: #222;
-    color: white;
-    border: 1px solid #555;
+    background-color: #fec2ca;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #222222;
+    border: 1px solid #fec2ca;
     padding: 0.5rem 1rem;
     margin: 0 0.3rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 999px; /* forma ovalada */
+    transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 .tabs button:hover {
-    background-color: #444;
+    background-color: #ff9cff;
+}
+
+.tabs button.activo {
+    background-color: #ff9cff;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .tabla-contenido {
@@ -294,3 +307,94 @@ footer {
     border-radius: 100%;
 }
 
+/* Formulario responsivo */
+
+.responsive-iframe {
+    position: relative;
+    width: 100%;
+    padding-top: 130%; /* Ajusta según el alto del form, 130% es una estimación */
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+/*Movil*/
+@media (max-width: 768px) {
+    .hero {
+        /*background-image: url('assets/img/TetoPear.png');
+        background-size: cover;
+        background-position: 0% 70%;
+        background-repeat: no-repeat;*/
+        background: linear-gradient(to bottom right, #fdb6c0, #fec2ca);
+        padding: 1rem .9rem;
+        text-align: center;
+    }
+    body {
+        font-size: 14px;
+        padding: 1rem;
+    }
+    .seccion {
+        padding: 0.9rem;
+    }
+    .seccionL{
+        padding: 2rem 0.7rem;
+        margin: auto;
+    }
+
+    .tabla-precios {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .rowsH th,
+    .rowsH td {
+        padding: 5px;
+        text-align: center;
+    }
+
+    /* Líneas finas entre filas del tbody */
+    .rowsHa tbody tr {
+        border-bottom: 1px solid #ccc;
+    }
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .tabs button {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+        margin-top: 0.2rem;
+    }
+    .galeria-mini img {
+        width: 100px;
+        height: auto;
+    }
+
+    .redes {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+}

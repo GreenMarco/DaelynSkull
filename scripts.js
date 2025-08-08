@@ -6,6 +6,13 @@ function mostrarTabla(id) {
   if (mostrar) {
     mostrar.classList.add('activa');
   }
+  // Quitar clase 'activo' de todos los botones
+    const botones = document.querySelectorAll('.tabs button');
+    botones.forEach(btn => btn.classList.remove('activo'));
+
+    // Agregar clase 'activo' al botón presionado
+    const botonActivo = document.querySelector(`.tabs button[onclick*="${id}"]`);
+    if (botonActivo) botonActivo.classList.add('activo');
 }
 
 // Mostrar "Normal" por defecto al cargar
