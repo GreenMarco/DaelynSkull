@@ -333,6 +333,7 @@ footer {
         font-size: 14px;
         padding: 1rem;
     }
+    
     .seccion{
         margin: 0;
     }
@@ -363,6 +364,12 @@ footer {
     }
     .galeria img {
         width: 140px;
+    }
+    .pfp {
+        display: block;
+        margin: 0 auto 1rem auto;
+        width: 500px;
+        height: auto;
     }
 
     .galeria-mini img {
