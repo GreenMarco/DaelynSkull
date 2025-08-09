@@ -327,79 +327,57 @@ footer {
 /*Movil*/
 @media (max-width: 768px) {
     .hero {
-        /*background-image: url('assets/img/TetoPear.png');
-        background-size: cover;
-        background-position: 0% 70%;
-        background-repeat: no-repeat;*/
-        background: linear-gradient(to bottom right, #fdb6c0, #fec2ca);
         padding: 1rem .9rem;
-        text-align: center;
     }
     body {
         font-size: 14px;
         padding: 1rem;
     }
+    .seccion{
+        margin: 0;
+    }
     .seccion p{
         font-size: 1rem;
     }
     .seccionL{
-        padding: 2rem 0.7rem;
-        margin: auto;
-    }
-
-    .tabla-precios {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
+        padding: 1rem 0rem;
     }
 
     .rowsH th,
     .rowsH td {
         padding: 5px;
-        text-align: center;
     }
 
-    /* Líneas finas entre filas del tbody */
-    .rowsHa tbody tr {
-        border-bottom: 1px solid #ccc;
-    }
-    table {
-        width: 100%;
-        font-size: 0.9rem;
+    .rowsH{
+        font-size: 1.1rem;
     }
 
     .tabs button {
-        display: block;
-        width: 100%;
-        margin: 0.5rem 0;
+        width: 40%;
+        margin: 0.5rem ;
     }
 
     .galeria {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 1rem;
-        margin-top: 0.2rem;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 0.1rem;
+    }
+    .galeria img {
+        width: 140px;
+    }
+
+    .galeria-mini img {
+        height: 140px;
     }
 
     .galeria-mini {
-        display: flex;
-        flex-wrap: wrap;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        justify-content: center;
-
-    }
-    .galeria-mini img {
-        height: 40%;
+        margin-bottom: 3rem;
     }
 
-    .redes {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
+    .seccionL li {
+        font-size: 1rem;
     }
 
     footer {
-        text-align: center;
         padding: 2rem 1rem;
     }
 }
