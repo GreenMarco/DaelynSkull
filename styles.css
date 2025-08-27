@@ -30,7 +30,8 @@ body {
     background-size: cover;
     background-position: 0% 70%;
     background-repeat: no-repeat;*/
-    background: linear-gradient(to bottom right, #fdb6c0, #fec2ca);
+    background: linear-gradient(to bottom right, #1a1a1a, #1a1a1a);
+    color: #fdb6c0;
     padding: 1rem 9rem;
     text-align: center;
 }
@@ -43,7 +44,7 @@ body {
 
 .hero p {
     font-size: 1.2rem;
-    color: #444;
+    color: #fdb6c0;
 }
 
 /* Navbar */
@@ -69,6 +70,7 @@ body {
     color: #6c63ff;
 }
 
+/* TETO PERA*/
 .fondo-derecha {
     position: fixed;
     bottom: 0;
@@ -79,13 +81,36 @@ body {
     pointer-events: none; /* para que no interfiera con clicks */
 }
 
+main{
+    padding: 4rem; /* espacio para que se vea alrededor */
+}
+
+.margen{
+    background-color: #fec2ca; /* el color del “marco” */
+    border-radius: 1rem;    /* borde redondeado exterior */
+    padding: 1rem;          /* grosor del marco */
+    max-width: 1000px;
+    margin: auto
+}
+
 /* Secciones */
 .seccion {
     background-color: #f9f9f9;
     text-align: center;
+    border-radius: 1rem;    /* borde redondeado exterior */
     padding: 1rem 2rem;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
+}
+
+#sobre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion h1 {
+    margin-bottom: 1rem;
+    color: #2e2550;
 }
 
 .seccion h2 {
@@ -95,16 +120,20 @@ body {
 }
 
 .seccion h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
     color: #2e2550;
+    text-align: 10rem;
 }
 
 .inde p {
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    text-align: left;
+    margin: 1.5rem 3rem 0 0;
     color: #2e2550;
 }
+
+
 
 .seccionL{
     text-align: left;
@@ -136,7 +165,7 @@ body {
 /*Foto de perfil*/
 .pfp {
     display: block;
-    margin: 0 auto 1rem auto;
+    margin: 1rem auto 1rem auto;
     max-width: 300px;
     width: 100%;
     height: auto;
@@ -193,11 +222,11 @@ body {
 }
 
 .tabs button:hover {
-    background-color: #ff9cff;
+    background-color: #fec0c3;
 }
 
 .tabs button.activo {
-    background-color: #ff9cff;
+    background-color: #fec0c3;
     color: white;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -227,6 +256,11 @@ body {
     object-fit: cover;
     border: 1px solid #ddd;
     transition: transform 0.2s;
+}
+
+.galeria img#horiz {
+    width: 400px; /* Ancho fijo para la imagen horizontal */
+    height: auto; /* Mantener proporción */
 }
 
 .galeria img:hover {
@@ -327,15 +361,25 @@ footer {
 /*Movil*/
 @media (max-width: 768px) {
     .hero {
-        padding: 1rem .9rem;
+        padding: 0rem;
     }
     body {
         font-size: 14px;
+    }
+
+    .margen{
+        padding: 1rem; /* grosor del marco */
+    }
+
+    main{
         padding: 1rem;
     }
     
     .seccion{
-        margin: 0;
+        margin: 0.5rem 0.5rem;
+    }
+    #sobre{
+        flex-direction: column-reverse; /* div2 arriba, div1 abajo */
     }
     .seccion p{
         font-size: 1rem;
@@ -353,17 +397,32 @@ footer {
         font-size: 1.1rem;
     }
 
+    .tabs {
+        margin-bottom: 1rem;
+        padding: 0rem 0rem;
+    }
+
+    #tabla-normal table tr,th{
+        font-size: 14px;
+    }
+
     .tabs button {
-        width: 40%;
-        margin: 0.5rem ;
+        width: 50%;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0rem;
+
     }
 
     .galeria {
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-        gap: 0.1rem;
+        justify-content: center;
+        align-items: center;
     }
     .galeria img {
-        width: 140px;
+        width: 200px
+    }
+    .galeria img#horiz {
+        width: 200px; /* Ancho fijo para la imagen horizontal */
+        height: auto; /* Mantener proporción */
     }
     .pfp {
         display: block;
