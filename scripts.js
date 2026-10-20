@@ -20,3 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
   mostrarTabla('normal');
 });
 
+
+
+
